@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Check</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>ATS Check</h1>
+    <form id="atsCheckForm" action="/ats_check" method="post" enctype="multipart/form-data">
+        <label for="resume">Upload your Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <input type="submit" value="Check ATS">
+    </form>
+    <div id="atsCheckResult"></div>
+    <script src="/static/js/ats_check.js"></script>
+</body>
+</html>

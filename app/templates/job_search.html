@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Job Search</h1>
+    <form id="jobSearchForm" action="/job_search" method="post" enctype="multipart/form-data">
+        <label for="jobDescription">Paste the Job Description:</label><br>
+        <textarea id="jobDescription" name="jobDescription" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Search">
+    </form>
+    <div id="jobSearchResults"></div>
+    <script src="/static/js/job_search.js"></script>
+</body>
+</html>
